@@ -1,0 +1,27 @@
+@import "../../styles/__variables";
+
+.game-container {
+
+    display: flex;
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: $block-size * $col_count;
+    height: $block-size*$row_count;
+
+
+    & aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 4px;
+
+        & .tetris-title {
+            font-size: 2em;
+            color: #fff;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+}

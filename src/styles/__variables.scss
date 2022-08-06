@@ -1,0 +1,33 @@
+$block-size: 18px;
+$col_count: 10;
+$row_count: 20;
+$empty-color: #1a1a1a;
+$filled-color: yellowgreen;
+
+@mixin change($block-size__new) {
+
+    $block-size: $block-size__new;
+
+    // your SCSS here
+    .cell-container {
+
+        width: $block-size;
+        height: $block-size;
+    }
+
+
+
+    .game-container {
+        height: $block-size*$row_count;
+        width: $block-size * $col_count;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    @include change(24px);
+}
+
+@media screen and (max-width: 520px) {
+    @include change(12px);
+}

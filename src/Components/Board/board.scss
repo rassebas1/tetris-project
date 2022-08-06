@@ -1,0 +1,16 @@
+@import "../../styles/__variables";
+
+.board-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+   
+
+    & .board-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+       
+       
+    }
+}

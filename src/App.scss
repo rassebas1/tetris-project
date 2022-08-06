@@ -1,0 +1,23 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1a1a1a;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    outline: none;
+
+    & .tetris-container {
+        align-items: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        // background-color: red;
+        width: 100vw;
+        height: 100vh;
+        margin: 0px;
+
+    }
+
+
+}
